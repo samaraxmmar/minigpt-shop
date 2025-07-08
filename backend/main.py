@@ -7,7 +7,7 @@ from langchain_ibm import WatsonxLLM
 import os
 
 # Chargement des variables d'environnement Watsonx
-os.environ["WATSONX_APIKEY"] = "WUmCVnhYhqKGT6Ga8dDXhOgy74Q9woCIE7tKa7mQy3oB"
+os.environ["WATSONX_APIKEY"] = ""
 
 # Paramètres du modèle
 parameters = {
@@ -20,7 +20,7 @@ llm = WatsonxLLM(
     model_id="meta-llama/llama-3-3-70b-instruct",
     url="https://us-south.ml.cloud.ibm.com",
     params=parameters,
-    project_id="871d5c7f-bb96-49d8-a197-6678e0abd16b",
+    project_id="",
 )
 
 # Initialisation FastAPI
